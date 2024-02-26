@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Heading, Text, Flex, Card } from "@radix-ui/themes";
 import IssueStatusBadge from "@/app/components/IssueStatusBadge";
 import ReactMarkdown from "react-markdown";
+import delay from "delay";
 
 interface Props {
   params: {
