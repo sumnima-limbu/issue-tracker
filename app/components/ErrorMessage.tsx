@@ -8,7 +8,11 @@ interface Props {
 const ErrorMessage = ({ children }: PropsWithChildren) => {
   if (!children) return null;
 
-  return <Text color="red">{children}</Text>;
+  return (
+    <Text color="red" as="p">
+      {children}
+    </Text>
+  );
 };
 
 export default ErrorMessage;
